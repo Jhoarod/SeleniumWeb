@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 
-def components():
-    driver  = webdriver.Chrome()
+def components():# definicion de la funcion
+    driver  = webdriver.Chrome()  #seteo de variables
     driver.get("https://google.com")
 
 
