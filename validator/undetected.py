@@ -4,6 +4,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import undetected_chromedriver as uc
 
+"""
+uso de undetected chromedriver que es una version 
+parchada para engañar los servicios antibots
+se instala asi pip install undetected-chromedriver
+"""
+
 def main():
     driver = uc.Chrome()
     wait = WebDriverWait(driver, 10)
