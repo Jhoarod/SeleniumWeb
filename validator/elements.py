@@ -1,7 +1,7 @@
-var = input({})
-componentes = {1,2,3,4,5}
+valor = int(input("ingresa un numero:"))
+componentes = ({1,2,3,4,5})
 
-if var in componentes:
+if valor in componentes:
     print ("esta en el conjunto")
 else:
     print("no se encuentra")
