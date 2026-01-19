@@ -33,7 +33,7 @@ def test_login():
         wait.until(EC.url_contains("inventory"))
         assert "inventory" in driver.current_url
 
-        print("✅ Login exitoso")
+        print(" Login exitoso")
 
         input("ENTER para cerrar")
 
