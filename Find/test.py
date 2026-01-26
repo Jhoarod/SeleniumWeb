@@ -7,4 +7,13 @@ def findelement():
         driver = webdriver.Chrome()
         wait = WebDriverWait(driver, 10)    
 
-        
+        try:
+            webdriver.Chrome("")
+        except:      
+            pass
+        driver.quit()
+
+
+
+
+
