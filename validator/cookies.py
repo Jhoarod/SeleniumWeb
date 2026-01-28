@@ -11,7 +11,7 @@ options.add_argument("--start-maximized")
 
 driver = webdriver.Chrome(options=options)
 
-url = "https://www.bbc.com"          
+url = "https://www.Rustdesk.com"          
 
 driver.get(url)
 
