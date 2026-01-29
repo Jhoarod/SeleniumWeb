@@ -23,7 +23,7 @@ try:
     
     
     accept_button.click()
-    print("¡Cookies aceptadas! ✓")
+    print("¡Cookies aceptadas!")
 
 except Exception as e:
     print("No se encontró o no se pudo clickear el botón de cookies.")
