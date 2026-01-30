@@ -20,14 +20,12 @@ try:
     accept_button = WebDriverWait(driver, 15).until(
         EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler"))
     )
-    
-    
     accept_button.click()
     print("¡Cookies aceptadas!")
 
 except Exception as e:
-    print("No se encontró o no se pudo clickear el botón de cookies.")
-    print("Error:", e)
+    print("No se encontró o no se pudo clickear el botón de cookies.",e)
+
    
 time.sleep(4)
 
