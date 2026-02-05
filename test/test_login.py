@@ -15,7 +15,7 @@ def test_login_con_capturas(driver, take_screenshot):
     password = wait.until(EC.visibility_of_element_located((By.ID, "password")))
     take_screenshot("02_inputs_visibles")
 
-    
+    #hola
     usuario.send_keys("usuario_test")
     password.send_keys("123456")
     take_screenshot("03_credenciales_ingresadas")
