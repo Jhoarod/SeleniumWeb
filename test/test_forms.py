@@ -1,8 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+
+
 def test_forms():
-    driver = webdriver.Chrome
+    driver = webdriver.Chrome()
+    wait= WebDriverWait(driver, 10)
+
     try:
-        driver.get()
+        webdriver.Chrome()
     except:
         pass 
