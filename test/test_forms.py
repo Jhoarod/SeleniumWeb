@@ -8,6 +8,7 @@ def test_forms():
     wait= WebDriverWait(driver, 10)
 
     try:
-        webdriver.Chrome()
+        webdriver.Chrome("https://kick.com")
     except:
         pass 
+    driver.quit()
