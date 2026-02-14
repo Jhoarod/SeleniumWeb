@@ -3,12 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def test_forms():
+def test_forms(take_screenshot):
     driver = webdriver.Chrome()
     wait= WebDriverWait(driver, 10)
 
     try:
-        webdriver.Chrome("https://kick.com")
+        driver.get("https://kick.com")
+        take_screenshot("01_pagina_login")
     except:
         pass 
     driver.quit()
