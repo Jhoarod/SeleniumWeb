@@ -19,7 +19,7 @@ def open_youtube(params=None):
 
         wait= WebDriverWait(driver,10)
 
-        find_box =wait.until(EC.presence_of_element_located ((By.NAME,"search_query")))
+        find_box =wait.until(EC.presence_of_element_located((By.NAME,"search_query")))
 
         print("cargando")
 
@@ -32,5 +32,5 @@ def open_youtube(params=None):
         driver.quit()
 
 if __name__== "__main__":
-    open_youtube()
+    open_youtube("tutorial de python")
 
