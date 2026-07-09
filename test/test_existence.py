@@ -18,9 +18,9 @@ def check_button_exists():
             button = wait.until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "button#search-icon-legacy"))
             )
-            print("✅ Button exists!")
+            print(" Button exists!")
         except:
-            print("❌ Button NOT found")
+            print(" Button NOT found")
         
     finally:
         driver.quit()
