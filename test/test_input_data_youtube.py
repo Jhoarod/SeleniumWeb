@@ -12,9 +12,11 @@ def open_youtube_and_search():
     """
     options = Options()
     options.add_argument("--start-maximized")
+ 
     # options.add_argument("--headless=new")
 
-    driver = webdriver.Chrome(options=options)
+
+    driver = webdriver.Chrome( options=options)
     
     try:
         print(" Opening YouTube...")
@@ -40,7 +42,7 @@ def open_youtube_and_search():
             
             # Click the real search button
             search_button = wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "button#search-icon-legacy"))
+                EC.element_to_be_clickable((By.CLASS_NAME, "ytSearchboxComponentSearchButton"))
             )
             search_button.click()
             
